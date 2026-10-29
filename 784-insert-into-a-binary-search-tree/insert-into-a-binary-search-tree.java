@@ -18,9 +18,7 @@ class Solution {
         if (root == null) {
             return new TreeNode(val);
         }
-
         TreeNode curr = root;
-
         while (true) {
             if (val > curr.val) {
                 if (curr.right == null) {
@@ -36,7 +34,6 @@ class Solution {
                 curr = curr.left;
             }
         }
-
         return root;
     }
 }
